@@ -43,7 +43,7 @@ public class Signup_page_stepdef {
 		
 		// giving the email
 		WebElement emaliid = driver.findElement(By.xpath("//input[@id=\"email\"]"));
-		emaliid.sendKeys("gofing@gmail.com");
+		emaliid.sendKeys("ing@gmail.com");
 		
 		// giving the contact no
 		WebElement cno = driver.findElement(By.xpath("//input[@id=\"contactNumber\"]"));

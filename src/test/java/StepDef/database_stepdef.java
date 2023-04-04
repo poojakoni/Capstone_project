@@ -44,6 +44,7 @@ public class database_stepdef {
 		Thread.sleep(3000);
 		WebElement manageproduct = driver.findElement(By.linkText("Manage Product"));
 		manageproduct.click();
+		Thread.sleep(5000);
 	}
 
 		@Then("I click on Add New Category button")
