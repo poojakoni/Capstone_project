@@ -15,7 +15,7 @@ public class Signup_page_stepdef {
 
 	@Given("I have launched the application")
 	public void i_have_launched_the_application() {
-		driver.get("http://localhost:8080/medicare/");
+		driver.get("http://localhost:8090/medicare/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
 
@@ -43,7 +43,7 @@ public class Signup_page_stepdef {
 		
 		// giving the email
 		WebElement emaliid = driver.findElement(By.xpath("//input[@id=\"email\"]"));
-		emaliid.sendKeys("sdfcing@gmail.com");
+		emaliid.sendKeys("GdcsVbg@gmail.com");
 		
 		// giving the contact no
 		WebElement cno = driver.findElement(By.xpath("//input[@id=\"contactNumber\"]"));

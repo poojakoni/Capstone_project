@@ -1,0 +1,705 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-04-10T09:13:51.318Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3712843400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "To perform the most-viewed products call",
+        "description": "",
+        "id": "to-perform-api-calls;to-perform-the-most-viewed-products-call",
+        "after": [
+          {
+            "result": {
+              "duration": 569012300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 38272434400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The base URI is \"http://localhost:8090/medicare/json/data/mv/products\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8090/medicare/json/data/mv/products\"",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDef.API_stepdef.the_base_URI_is(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11291666700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I perform the Get operation",
+            "match": {
+              "location": "StepDef.API_stepdef.i_perform_the_Get_operation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19517200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Response code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDef.API_stepdef.response_code_should_be(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1101492600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "UI displays the corresponding products",
+            "match": {
+              "location": "StepDef.API_stepdef.ui_displays_the_corresponding_products()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "To perform API calls",
+    "description": "",
+    "id": "to-perform-api-calls",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/API.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3954815600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have launched the application",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-10T09:14:46.512Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2423181400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "This scenario is to login as admin and managing product and creating new medicine Category",
+        "description": "",
+        "id": "login-feature-scenario;this-scenario-is-to-login-as-admin-and-managing-product-and-creating-new-medicine-category",
+        "after": [
+          {
+            "result": {
+              "duration": 73066600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6345994500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i clcik on login link",
+            "match": {
+              "location": "StepDef.Adminpage.i_clcik_on_login_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5869786800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i enter the correct username and password",
+            "match": {
+              "location": "StepDef.Adminpage.i_enter_the_correct_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2034331300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i clcik on login Button",
+            "match": {
+              "location": "StepDef.Adminpage.i_clcik_on_login_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5953696400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i click on manage product",
+            "match": {
+              "location": "StepDef.Adminpage.i_click_on_manage_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5207977200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "in product management page i enter Name and Brand name and Discription and Unit price and Quantity",
+            "match": {
+              "location": "StepDef.Adminpage.in_product_management_page_i_enter_Name_and_Brand_name_and_Discription_and_Unit_price_and_Quantity()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5341308500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "i upload file regards product",
+            "match": {
+              "location": "StepDef.Adminpage.i_upload_file_regards_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5324792800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "i click on add new Category",
+            "match": {
+              "location": "StepDef.Adminpage.i_click_on_add_new_Category()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10350410200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "i enter new productname and Discription  and i will save the product Category",
+            "match": {
+              "location": "StepDef.Adminpage.i_enter_new_productname_and_Discription_and_i_will_save_the_product_Category()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5756234400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "click on save button",
+            "match": {
+              "location": "StepDef.Adminpage.click_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 506456500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "i clcik on ViewProduct to recheck the new category",
+            "match": {
+              "location": "StepDef.Adminpage.i_clcik_on_ViewProduct_to_recheck_the_new_category()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature Scenario",
+    "description": "",
+    "id": "login-feature-scenario",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/admin.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1264638700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I have launched the application",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-10T09:15:45.709Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1263636600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Add a new category, verify it\u0027s added in the database, remove the new category",
+        "description": "",
+        "id": "add-category-and-check-database-scenario;add-a-new-category--verify-it-s-added-in-the-database--remove-the-new-category",
+        "after": [
+          {
+            "result": {
+              "duration": 85077000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7176469100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I login as an admin",
+            "match": {
+              "location": "StepDef.database_stepdef.i_login_as_an_admin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9705846000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on Manage Product i will land product manage page",
+            "match": {
+              "location": "StepDef.database_stepdef.i_click_on_Manage_Product_i_will_land_product_manage_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8370100900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on Add New Category button",
+            "match": {
+              "location": "StepDef.database_stepdef.i_click_on_Add_New_Category_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 357823000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter Name",
+            "match": {
+              "location": "StepDef.database_stepdef.i_enter_Name()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5450460300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I enter Description",
+            "match": {
+              "location": "StepDef.database_stepdef.i_enter_Description()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5612109100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click Save button",
+            "match": {
+              "location": "StepDef.database_stepdef.i_click_Save_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 849265500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I verify the new category is added to the database",
+            "match": {
+              "location": "StepDef.database_stepdef.i_verify_the_new_category_is_added_to_the_database()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Add Category and Check Database Scenario",
+    "description": "",
+    "id": "add-category-and-check-database-scenario",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/database.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1111000300,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I have launched the application",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-10T09:16:25.894Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1239616500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "This scenario is to define the sign up and login and order prodcut and payment.",
+        "description": "",
+        "id": "login-feature-scenario;this-scenario-is-to-define-the-sign-up-and-login-and-order-prodcut-and-payment.",
+        "after": [
+          {
+            "result": {
+              "duration": 71564500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDef.hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2234438600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "i clcik on sign up link",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_clcik_on_sign_up_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1403763900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i enter the firstname and lastname and email and contactno and password and confirm passowrd  and select role as user in radio button",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_enter_the_firstname_and_lastname_and_email_and_contactno_and_password_and_confirm_passowrd_and_select_role_as_user_in_radio_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5773197400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i clcik on next-billing Button",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_clcik_on_next_billing_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1014913900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i enter the addresslineone and addresslinetwo  and city  and postal code  and state as  and country as",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_enter_the_addresslineone_and_addresslinetwo_and_city_and_postal_code_and_state_as_and_country_as()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1380745700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i click on next-confirm button",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_click_on_next_confirm_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4418995100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i click on confirm button",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_click_on_confirm_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6031384100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i click on Login Here button",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_click_on_Login_Here_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5823866600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I enter the username and password as",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_enter_the_username_and_password_as()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1729570300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "i clcik on Login Button",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_clcik_on_Login_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2067359800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I select product and clcik on view product",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_select_product_and_clcik_on_view_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4335904500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "i clcik on addcart Button",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_clcik_on_addcart_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5165262500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "i clcik on checkout Button",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_clcik_on_checkout_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4113717400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I clcik on saved address detilas",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_clcik_on_saved_address_detilas()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2160945300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "i enter card no  and expmonth and expyear and cvv",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_enter_card_no_and_expmonth_and_expyear_and_cvv()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3549695300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "i clcik on pay Button",
+            "match": {
+              "location": "StepDef.Signup_page_stepdef.i_clcik_on_pay_Button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature Scenario",
+    "description": "",
+    "id": "login-feature-scenario",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/medicare.feature",
+    "tags": []
+  }
+]

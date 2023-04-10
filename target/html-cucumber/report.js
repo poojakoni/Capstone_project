@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/java/featurefile/API.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/java/features/API.feature");
 formatter.feature({
   "name": "To perform API calls",
   "description": "",
@@ -18,7 +18,7 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "The base URI is \"http://localhost:8080/medicare/json/data/mv/products\"",
+  "name": "The base URI is \"http://localhost:8090/medicare/json/data/mv/products\"",
   "keyword": "Given "
 });
 formatter.match({
@@ -60,7 +60,7 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.uri("file:src/test/java/featurefile/admin.feature");
+formatter.uri("file:src/test/java/features/admin.feature");
 formatter.feature({
   "name": "Login Feature Scenario",
   "description": "",
@@ -90,7 +90,7 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@test"
+      "name": "@sanity"
     }
   ]
 });
@@ -197,7 +197,7 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.uri("file:src/test/java/featurefile/database.feature");
+formatter.uri("file:src/test/java/features/database.feature");
 formatter.feature({
   "name": "Add Category and Check Database Scenario",
   "description": "",
@@ -227,7 +227,7 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@test"
+      "name": "@sanity"
     }
   ]
 });
@@ -304,7 +304,7 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.uri("file:src/test/java/featurefile/medicare.feature");
+formatter.uri("file:src/test/java/features/medicare.feature");
 formatter.feature({
   "name": "Login Feature Scenario",
   "description": "",

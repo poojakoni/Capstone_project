@@ -1,8 +1,8 @@
 StepDef\Adminpage.class
 StepDef\API_stepdef.class
 StepDef\database_stepdef.class
-StepDef\runner_class.class
-StepDef\Homepage.class
+StepDef\TestRunner.class
+pages\Homepage.class
 StepDef\hooks.class
-StepDef\DBUtils.class
+pages\DBUtils.class
 StepDef\Signup_page_stepdef.class

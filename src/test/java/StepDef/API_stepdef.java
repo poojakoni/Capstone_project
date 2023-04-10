@@ -4,10 +4,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
+
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -16,6 +17,7 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import pages.Homepage;
 
 public class API_stepdef<HomePage> {
 	
@@ -31,7 +33,7 @@ public class API_stepdef<HomePage> {
 		 
 		public API_stepdef() {
 			homePage = new Homepage();
-			driver.get("http://localhost:8080/medicare/home");
+			driver.get("http://localhost:8090/medicare/home");
 			driver.manage().window().maximize();
 		    driver.manage().timeouts().implicitlyWait(8000, TimeUnit.MILLISECONDS);
 		}
